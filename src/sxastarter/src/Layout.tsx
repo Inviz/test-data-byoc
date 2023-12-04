@@ -3,13 +3,9 @@
  */
 import React from 'react';
 import Head from 'next/head';
-import {
-  Placeholder,
-  LayoutServiceData,
-  Field,
-  HTMLLink,
-} from '@sitecore-jss/sitecore-jss-nextjs';
+import { Placeholder, LayoutServiceData, Field, HTMLLink } from '@sitecore-jss/sitecore-jss-nextjs';
 import { getPublicUrl } from '@sitecore-jss/sitecore-jss-nextjs/utils';
+import './components/BYOC';
 import Scripts from 'src/Scripts';
 
 // Prefix public assets with a public URL to enable compatibility with Sitecore Experience Editor.

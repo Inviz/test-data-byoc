@@ -1,7 +1,7 @@
 import { ConfigPlugin, JssConfig } from '..';
 
 /**
- * This plugin will set configuration specific for SXA.
+ * This plugin will set configuration specific for SXA. 
  */
 class SXAPlugin implements ConfigPlugin {
   // should come before fallback
