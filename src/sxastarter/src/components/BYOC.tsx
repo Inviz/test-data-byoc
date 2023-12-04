@@ -5,6 +5,7 @@ export default function ExampleClientsideComponent(props: {
   lastName?: string;
   telephone?: string;
   bold?: boolean;
+  datasources?: FEAAS.DataScopes;
 }) {
   const [counter, setCounter] = useState(0);
   useEffect(() => {
@@ -30,6 +31,10 @@ export default function ExampleClientsideComponent(props: {
           {' '}
           <var>{counter}</var>s elapsed{' '}
         </dd>{' '}
+        <dt>Data:</dt>
+        <dd>
+          <pre>{JSON.stringify(props.datasources, null, 2)}</pre>
+        </dd>
       </dl>{' '}
     </>
   );
